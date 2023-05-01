@@ -1,0 +1,15 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "MonitoringMS",
+    "description": "This Microservice is responsible for the monitorization of the 'Powerpay' ecosystem Microservices",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://che4ppayapi01.cheadds.ca"
+    }
+  ],
+  "paths": {
+  }
+}

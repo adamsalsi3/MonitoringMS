@@ -1,0 +1,2053 @@
+{
+  "contexts": {
+    "TimeOff-Service": {
+      "mappings": {
+        "dispatcherServlets": {
+          "dispatcherServlet": [
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#softDeletePeopleEntitlByCompanyIdNPeopGuid(UUID, UUID, HttpServletRequest)",
+              "predicate": "{PUT [/companytimeoffrequest/softdeletepeopleentitlbycompanyguidpeopguid]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "softDeletePeopleEntitlByCompanyIdNPeopGuid",
+                  "descriptor": "(Ljava/util/UUID;Ljava/util/UUID;Ljavax/servlet/http/HttpServletRequest;)Z"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "PUT"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/softdeletepeopleentitlbycompanyguidpeopguid"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#getCustomEntitlementsFilter(UUID)",
+              "predicate": "{GET [/companytimeoffrequest/filter/{customEntitlementGuid}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "getCustomEntitlementsFilter",
+                  "descriptor": "(Ljava/util/UUID;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/filter/{customEntitlementGuid}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController#startRecalculateDarryl(RecalcSyncItem)",
+              "predicate": "{POST [/timeoffrequests/recalculate]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController",
+                  "name": "startRecalculateDarryl",
+                  "descriptor": "(Lca/ceridian/powerpayhr/timeoff/model/RecalcSyncItem;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "POST"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/timeoffrequests/recalculate"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.PeoplePreferenceController#createPeoplePreference(PeoplePreferenceModel, HttpServletRequest)",
+              "predicate": "{POST [/preference]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.PeoplePreferenceController",
+                  "name": "createPeoplePreference",
+                  "descriptor": "(Lcom/ceridian/powerpay/common/model/PeoplePreferenceModel;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "POST"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/preference"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#getImportCodeForCompanyGuid(UUID, CustomEntitlementWizardModel)",
+              "predicate": "{POST [/companytimeoffrequest/validate/importcode/{companyGuid}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "getImportCodeForCompanyGuid",
+                  "descriptor": "(Ljava/util/UUID;Lcom/ceridian/powerpay/common/model/CustomEntitlementWizardModel;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "POST"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/validate/importcode/{companyGuid}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyHolidayController#updateCompanyHoliday(CompanyHolidayModel, HttpServletRequest)",
+              "predicate": "{PUT [/companyholidays/], consumes [application/json], produces [application/json]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyHolidayController",
+                  "name": "updateCompanyHoliday",
+                  "descriptor": "(Lcom/ceridian/powerpay/common/model/CompanyHolidayModel;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [
+                    {
+                      "mediaType": "application/json",
+                      "negated": false
+                    }
+                  ],
+                  "headers": [],
+                  "methods": [
+                    "PUT"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companyholidays/"
+                  ],
+                  "produces": [
+                    {
+                      "mediaType": "application/json",
+                      "negated": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "handler": "springfox.documentation.swagger.web.ApiResourceController#securityConfiguration()",
+              "predicate": "{GET [/swagger-resources/configuration/security], produces [application/json]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "springfox.documentation.swagger.web.ApiResourceController",
+                  "name": "securityConfiguration",
+                  "descriptor": "()Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/swagger-resources/configuration/security"
+                  ],
+                  "produces": [
+                    {
+                      "mediaType": "application/json",
+                      "negated": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyHolidayController#deleteCompanyHolidayById(Long, HttpServletRequest)",
+              "predicate": "{DELETE [/companyholidays/{holidayId}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyHolidayController",
+                  "name": "deleteCompanyHolidayById",
+                  "descriptor": "(Ljava/lang/Long;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "DELETE"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companyholidays/{holidayId}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#getPeopleEntitlement(UUID)",
+              "predicate": "{GET [/companytimeoffrequest/filteremployees/{entitlementGuid}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "getPeopleEntitlement",
+                  "descriptor": "(Ljava/util/UUID;)Ljava/util/List;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/filteremployees/{entitlementGuid}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController#getTimeOffRequestConfiguration(HttpServletRequest)",
+              "predicate": "{GET [/timeoffrequests/config]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController",
+                  "name": "getTimeOffRequestConfiguration",
+                  "descriptor": "(Ljavax/servlet/http/HttpServletRequest;)Lcom/ceridian/powerpay/common/model/TimeOffConfigurationModel;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/timeoffrequests/config"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.WorkerAnniversaryController#getWorkersAnniversaryDetails(UUID, Long, HttpServletRequest)",
+              "predicate": "{GET [/workeranniversary], params [peopleGuid && companyId], produces [application/json]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.WorkerAnniversaryController",
+                  "name": "getWorkersAnniversaryDetails",
+                  "descriptor": "(Ljava/util/UUID;Ljava/lang/Long;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [
+                    {
+                      "name": "peopleGuid",
+                      "value": null,
+                      "negated": false
+                    },
+                    {
+                      "name": "companyId",
+                      "value": null,
+                      "negated": false
+                    }
+                  ],
+                  "patterns": [
+                    "/workeranniversary"
+                  ],
+                  "produces": [
+                    {
+                      "mediaType": "application/json",
+                      "negated": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "handler": "springfox.documentation.swagger.web.ApiResourceController#uiConfiguration()",
+              "predicate": "{GET [/swagger-resources/configuration/ui], produces [application/json]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "springfox.documentation.swagger.web.ApiResourceController",
+                  "name": "uiConfiguration",
+                  "descriptor": "()Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/swagger-resources/configuration/ui"
+                  ],
+                  "produces": [
+                    {
+                      "mediaType": "application/json",
+                      "negated": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#getEntitlementDetails(UUID)",
+              "predicate": "{GET [/companytimeoffrequest/entitlement/{customEntitlementGuid}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "getEntitlementDetails",
+                  "descriptor": "(Ljava/util/UUID;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/entitlement/{customEntitlementGuid}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#getPayCodesForCeridianCompany(String, String, HttpServletRequest)",
+              "predicate": "{GET [/companytimeoffrequest/paycodes/{payrollNumber}/{language}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "getPayCodesForCeridianCompany",
+                  "descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljavax/servlet/http/HttpServletRequest;)Ljava/util/List;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/paycodes/{payrollNumber}/{language}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#saveCustomeEntitlmentWizard(CustomEntitlementWizardModel, HttpServletRequest)",
+              "predicate": "{POST [/companytimeoffrequest/createcustomentitlement]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "saveCustomeEntitlmentWizard",
+                  "descriptor": "(Lcom/ceridian/powerpay/common/model/CustomEntitlementWizardModel;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "POST"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/createcustomentitlement"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController#getReportToWithEntitlements(UUID)",
+              "predicate": "{GET [/timeoffrequests/reportToWithEntitlements/managerPeopleGuid/{managerPeopleGuid}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController",
+                  "name": "getReportToWithEntitlements",
+                  "descriptor": "(Ljava/util/UUID;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/timeoffrequests/reportToWithEntitlements/managerPeopleGuid/{managerPeopleGuid}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#removeCustomEntitlementForPeopleEntitlmentGuid(Boolean, UUID, HttpServletRequest)",
+              "predicate": "{DELETE [/companytimeoffrequest/unassignedcustomentitlement]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "removeCustomEntitlementForPeopleEntitlmentGuid",
+                  "descriptor": "(Ljava/lang/Boolean;Ljava/util/UUID;Ljavax/servlet/http/HttpServletRequest;)Lcom/ceridian/powerpay/common/model/CeridianServiceResponse;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "DELETE"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/unassignedcustomentitlement"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.PeoplePreferenceController#deletePeoplePreference(UUID, HttpServletRequest)",
+              "predicate": "{DELETE [/preference/{peopleGuid}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.PeoplePreferenceController",
+                  "name": "deletePeoplePreference",
+                  "descriptor": "(Ljava/util/UUID;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "DELETE"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/preference/{peopleGuid}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.PeoplePreferenceController#getPeoplePreference(UUID)",
+              "predicate": "{GET [/preference/], params [peopleGuid]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.PeoplePreferenceController",
+                  "name": "getPeoplePreference",
+                  "descriptor": "(Ljava/util/UUID;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [
+                    {
+                      "name": "peopleGuid",
+                      "value": null,
+                      "negated": false
+                    }
+                  ],
+                  "patterns": [
+                    "/preference/"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)",
+              "predicate": "{GET [/v2/api-docs], produces [application/json || application/hal+json]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "springfox.documentation.swagger2.web.Swagger2ControllerWebMvc",
+                  "name": "getDocumentation",
+                  "descriptor": "(Ljava/lang/String;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/v2/api-docs"
+                  ],
+                  "produces": [
+                    {
+                      "mediaType": "application/json",
+                      "negated": false
+                    },
+                    {
+                      "mediaType": "application/hal+json",
+                      "negated": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController#findTimeOffRequestByTimeOffGuid(UUID, HttpServletRequest)",
+              "predicate": "{GET [/timeoffrequests/timeoff/{guid}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController",
+                  "name": "findTimeOffRequestByTimeOffGuid",
+                  "descriptor": "(Ljava/util/UUID;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/timeoffrequests/timeoff/{guid}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController#findTimeOffRequestByCompanyIdAndDuration(long, String, String, HttpServletRequest)",
+              "predicate": "{GET [/timeoffrequests/companyperiodtimeoffs/{companyId}/{startDate}/{endDate}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController",
+                  "name": "findTimeOffRequestByCompanyIdAndDuration",
+                  "descriptor": "(JLjava/lang/String;Ljava/lang/String;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/timeoffrequests/companyperiodtimeoffs/{companyId}/{startDate}/{endDate}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyHolidayController#createCompanyHoliday(CompanyHolidayModel, HttpServletRequest)",
+              "predicate": "{POST [/companyholidays], consumes [application/json], produces [application/json]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyHolidayController",
+                  "name": "createCompanyHoliday",
+                  "descriptor": "(Lcom/ceridian/powerpay/common/model/CompanyHolidayModel;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [
+                    {
+                      "mediaType": "application/json",
+                      "negated": false
+                    }
+                  ],
+                  "headers": [],
+                  "methods": [
+                    "POST"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companyholidays"
+                  ],
+                  "produces": [
+                    {
+                      "mediaType": "application/json",
+                      "negated": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#addPeopleToCustomEntitlements(CustomEntitlementWizardModel, HttpServletRequest)",
+              "predicate": "{POST [/companytimeoffrequest/addpeopletoentitlement]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "addPeopleToCustomEntitlements",
+                  "descriptor": "(Lcom/ceridian/powerpay/common/model/CustomEntitlementWizardModel;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "POST"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/addpeopletoentitlement"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#getAssignedCustomEntitlementForPeopleGuid(UUID, HttpServletRequest, String)",
+              "predicate": "{GET [/companytimeoffrequest/assignedcustomentitlement]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "getAssignedCustomEntitlementForPeopleGuid",
+                  "descriptor": "(Ljava/util/UUID;Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/assignedcustomentitlement"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeoffSettingController#saveCompanyTimeOffSettings(String, CompanyTimeOffSettingWrapper)",
+              "predicate": "{PUT [/payrollNumber/{payrollNumber}/companysettings]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeoffSettingController",
+                  "name": "saveCompanyTimeOffSettings",
+                  "descriptor": "(Ljava/lang/String;Lcom/ceridian/powerpay/common/model/CompanyTimeOffSettingWrapper;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "PUT"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/payrollNumber/{payrollNumber}/companysettings"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController#findTimeOffRequestByTimeOffId(UUID, HttpServletRequest)",
+              "predicate": "{GET [/timeoffrequests/timeoff/deprecated/{id}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController",
+                  "name": "findTimeOffRequestByTimeOffId",
+                  "descriptor": "(Ljava/util/UUID;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/timeoffrequests/timeoff/deprecated/{id}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#getCompanyEntitlements(UUID)",
+              "predicate": "{GET [/companytimeoffrequest/company/{companyGuid}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "getCompanyEntitlements",
+                  "descriptor": "(Ljava/util/UUID;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/company/{companyGuid}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#assignCustomEntitlementForPeopleGuid(TimeOffAdjustmentWrapper, UUID, HttpServletRequest)",
+              "predicate": "{POST [/companytimeoffrequest/assignedcustomentitlement]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "assignCustomEntitlementForPeopleGuid",
+                  "descriptor": "(Lcom/ceridian/powerpay/common/model/TimeOffAdjustmentWrapper;Ljava/util/UUID;Ljavax/servlet/http/HttpServletRequest;)Lcom/ceridian/powerpay/common/model/CeridianServiceResponse;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "POST"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/assignedcustomentitlement"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController#isHolidayDateFallsOnTimeoffRequest(long, String, HttpServletRequest)",
+              "predicate": "{GET [/timeoffrequests/isholidayfallsontimeofrequest], produces [application/json]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController",
+                  "name": "isHolidayDateFallsOnTimeoffRequest",
+                  "descriptor": "(JLjava/lang/String;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/timeoffrequests/isholidayfallsontimeofrequest"
+                  ],
+                  "produces": [
+                    {
+                      "mediaType": "application/json",
+                      "negated": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#getDescriptionForCompanyGuid(UUID, CustomEntitlementWizardModel)",
+              "predicate": "{POST [/companytimeoffrequest/validate/description/{companyGuid}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "getDescriptionForCompanyGuid",
+                  "descriptor": "(Ljava/util/UUID;Lcom/ceridian/powerpay/common/model/CustomEntitlementWizardModel;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "POST"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/validate/description/{companyGuid}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeoffSettingController#deleteEntitlement(UUID)",
+              "predicate": "{DELETE [/payroll/deleteentitlement]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeoffSettingController",
+                  "name": "deleteEntitlement",
+                  "descriptor": "(Ljava/util/UUID;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "DELETE"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/payroll/deleteentitlement"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.AbsenceReasonController#createAbsenceReason(CompanyAbsenceReasonModel)",
+              "predicate": "{POST [/absencereasons]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.AbsenceReasonController",
+                  "name": "createAbsenceReason",
+                  "descriptor": "(Lcom/ceridian/powerpay/common/model/CompanyAbsenceReasonModel;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "POST"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/absencereasons"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.PeoplePreferenceController#validatePeoplePreference(PeoplePreferenceModel, HttpServletRequest)",
+              "predicate": "{PUT [/preference/validate]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.PeoplePreferenceController",
+                  "name": "validatePeoplePreference",
+                  "descriptor": "(Lcom/ceridian/powerpay/common/model/PeoplePreferenceModel;Ljavax/servlet/http/HttpServletRequest;)Lcom/ceridian/powerpay/common/model/PeoplePreferenceModel;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "PUT"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/preference/validate"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.AbsenceReasonController#updateAbsenceReason(CompanyAbsenceReasonModel)",
+              "predicate": "{PUT [/absencereasons]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.AbsenceReasonController",
+                  "name": "updateAbsenceReason",
+                  "descriptor": "(Lcom/ceridian/powerpay/common/model/CompanyAbsenceReasonModel;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "PUT"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/absencereasons"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#updateAssignedCustomEntitlementForPeopleGuid(TimeOffAdjustmentWrapper, UUID, HttpServletRequest)",
+              "predicate": "{PUT [/companytimeoffrequest/assignedcustomentitlement]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "updateAssignedCustomEntitlementForPeopleGuid",
+                  "descriptor": "(Lcom/ceridian/powerpay/common/model/TimeOffAdjustmentWrapper;Ljava/util/UUID;Ljavax/servlet/http/HttpServletRequest;)Lcom/ceridian/powerpay/common/model/CeridianServiceResponse;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "PUT"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/assignedcustomentitlement"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController#createTimeOffRequest(TimeOffRequestModel, HttpServletRequest)",
+              "predicate": "{POST [/timeoffrequests]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController",
+                  "name": "createTimeOffRequest",
+                  "descriptor": "(Lcom/ceridian/powerpay/common/model/TimeOffRequestModel;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "POST"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/timeoffrequests"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController#validateTorDate(String, String, String, HttpServletRequest)",
+              "predicate": "{GET [/timeoffrequests/{payrollNumber}/validateTorDate]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController",
+                  "name": "validateTorDate",
+                  "descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/timeoffrequests/{payrollNumber}/validateTorDate"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeoffSettingController#getCompanyTimeOffSettings(String)",
+              "predicate": "{GET [/payrollNumber/{payrollNumber}/companysettings]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeoffSettingController",
+                  "name": "getCompanyTimeOffSettings",
+                  "descriptor": "(Ljava/lang/String;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/payrollNumber/{payrollNumber}/companysettings"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController#deleteTimeOffRequestById(UUID, HttpServletRequest)",
+              "predicate": "{DELETE [/timeoffrequests/{timeOffRequestGuid}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController",
+                  "name": "deleteTimeOffRequestById",
+                  "descriptor": "(Ljava/util/UUID;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "DELETE"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/timeoffrequests/{timeOffRequestGuid}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#getBalanceHistoryForCompany(Long, HttpServletRequest)",
+              "predicate": "{GET [/companytimeoffrequest/balancehistories/{companyId}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "getBalanceHistoryForCompany",
+                  "descriptor": "(Ljava/lang/Long;Ljavax/servlet/http/HttpServletRequest;)Ljava/util/List;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/balancehistories/{companyId}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController#findTimeOffRequestByPeopleGuidMonthYear(UUID, int, int, HttpServletRequest)",
+              "predicate": "{GET [/timeoffrequests/peopletimeoffs/{peopleGuid}/{month}/{year}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController",
+                  "name": "findTimeOffRequestByPeopleGuidMonthYear",
+                  "descriptor": "(Ljava/util/UUID;IILjavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/timeoffrequests/peopletimeoffs/{peopleGuid}/{month}/{year}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyHolidayController#findCompanyTimeOffRequest()",
+              "predicate": "{GET [/companyholidays/companytimeoffflag]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyHolidayController",
+                  "name": "findCompanyTimeOffRequest",
+                  "descriptor": "()Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companyholidays/companytimeoffflag"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController#searchTimeOffRequests(Long, Boolean, Boolean, Long, String, Integer, Integer, String, boolean, HttpServletRequest)",
+              "predicate": "{GET [/timeoffrequests/search]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController",
+                  "name": "searchTimeOffRequests",
+                  "descriptor": "(Ljava/lang/Long;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;ZLjavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/timeoffrequests/search"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController#findTimeOffRequestsByTimeOffGuids(String, List)",
+              "predicate": "{GET [/timeoffrequests/timeoff/list/{ids}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController",
+                  "name": "findTimeOffRequestsByTimeOffGuids",
+                  "descriptor": "(Ljava/lang/String;Ljava/util/List;)Ljava/util/List;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/timeoffrequests/timeoff/list/{ids}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyHolidayController#findJurisdictionCode(String, HttpServletRequest)",
+              "predicate": "{GET [/companyholidays/jurisdiction]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyHolidayController",
+                  "name": "findJurisdictionCode",
+                  "descriptor": "(Ljava/lang/String;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companyholidays/jurisdiction"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#getAssignedToModelForStandardEntitlement(Integer, AccumulatorCalcMethod, HttpServletRequest)",
+              "predicate": "{GET [/companytimeoffrequest/standardentitlements/assignedto/{accumulatorNumber}/{calcMethodCode}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "getAssignedToModelForStandardEntitlement",
+                  "descriptor": "(Ljava/lang/Integer;Lcom/ceridian/powerpay/common/model/AccumulatorCalcMethod;Ljavax/servlet/http/HttpServletRequest;)Ljava/util/List;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/standardentitlements/assignedto/{accumulatorNumber}/{calcMethodCode}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#validatePayCodesForWarninMessages(String, String, HttpServletRequest)",
+              "predicate": "{GET [/companytimeoffrequest/validation/{payrollNumber}/{payCode}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "validatePayCodesForWarninMessages",
+                  "descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljavax/servlet/http/HttpServletRequest;)Lcom/ceridian/powerpay/common/model/CeridianResponseModel;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/validation/{payrollNumber}/{payCode}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.PeoplePreferenceController#getTimeZones(String)",
+              "predicate": "{GET [/preference/timezones], params [timeZone]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.PeoplePreferenceController",
+                  "name": "getTimeZones",
+                  "descriptor": "(Ljava/lang/String;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [
+                    {
+                      "name": "timeZone",
+                      "value": null,
+                      "negated": false
+                    }
+                  ],
+                  "patterns": [
+                    "/preference/timezones"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController#getReportingEmployees(UUID, long, HttpServletRequest)",
+              "predicate": "{GET [/timeoffrequests/reportees], params [reportsToGuid && companyId], produces [application/json]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController",
+                  "name": "getReportingEmployees",
+                  "descriptor": "(Ljava/util/UUID;JLjavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [
+                    {
+                      "name": "reportsToGuid",
+                      "value": null,
+                      "negated": false
+                    },
+                    {
+                      "name": "companyId",
+                      "value": null,
+                      "negated": false
+                    }
+                  ],
+                  "patterns": [
+                    "/timeoffrequests/reportees"
+                  ],
+                  "produces": [
+                    {
+                      "mediaType": "application/json",
+                      "negated": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#getAssignedToValues(UUID, UUID, HttpServletRequest)",
+              "predicate": "{GET [/companytimeoffrequest/{companyGuid}/{customEntitlementGuid}/assignedto]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "getAssignedToValues",
+                  "descriptor": "(Ljava/util/UUID;Ljava/util/UUID;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/{companyGuid}/{customEntitlementGuid}/assignedto"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#postImport(String, MultipartFile, HttpServletRequest)",
+              "predicate": "{POST [/companytimeoffrequest/importbalances]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "postImport",
+                  "descriptor": "(Ljava/lang/String;Lorg/springframework/web/multipart/MultipartFile;Ljavax/servlet/http/HttpServletRequest;)Ljava/util/List;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "POST"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/importbalances"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeoffSettingController#validateEntitlementForDelete(UUID)",
+              "predicate": "{GET [/payroll/validatedeleteentitlement]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeoffSettingController",
+                  "name": "validateEntitlementForDelete",
+                  "descriptor": "(Ljava/util/UUID;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/payroll/validatedeleteentitlement"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController#findTimeOffRequestByCompanyIdMonthYear(long, int, int, HttpServletRequest)",
+              "predicate": "{GET [/timeoffrequests/companytimeoffs/{companyId}/{month}/{year}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController",
+                  "name": "findTimeOffRequestByCompanyIdMonthYear",
+                  "descriptor": "(JIILjavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/timeoffrequests/companytimeoffs/{companyId}/{month}/{year}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#updateStandardEntitlement(EntitlementViewModel, HttpServletRequest)",
+              "predicate": "{PUT [/companytimeoffrequest/updatestandardentitlement]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "updateStandardEntitlement",
+                  "descriptor": "(Lcom/ceridian/powerpay/common/model/EntitlementViewModel;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "PUT"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/updatestandardentitlement"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.AbsenceReasonController#getPaycodes(long)",
+              "predicate": "{GET [/absencereasons/paycodes/{companyId}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.AbsenceReasonController",
+                  "name": "getPaycodes",
+                  "descriptor": "(J)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/absencereasons/paycodes/{companyId}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController#updateTimeOffRequest(TimeOffRequestModel, HttpServletRequest)",
+              "predicate": "{PUT [/timeoffrequests], produces [application/json]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController",
+                  "name": "updateTimeOffRequest",
+                  "descriptor": "(Lcom/ceridian/powerpay/common/model/TimeOffRequestModel;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "PUT"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/timeoffrequests"
+                  ],
+                  "produces": [
+                    {
+                      "mediaType": "application/json",
+                      "negated": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController#getStatusType(HttpServletRequest)",
+              "predicate": "{GET [/timeoffrequests/status]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController",
+                  "name": "getStatusType",
+                  "descriptor": "(Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/timeoffrequests/status"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController#getEmployeeStatus(UUID, HttpServletRequest)",
+              "predicate": "{GET [/timeoffrequests/employee]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController",
+                  "name": "getEmployeeStatus",
+                  "descriptor": "(Ljava/util/UUID;Ljavax/servlet/http/HttpServletRequest;)Lcom/ceridian/powerpay/ppadapter/model/EmployeeModel;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/timeoffrequests/employee"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.PeoplePreferenceController#getPeoplePreferenceWrapper(UUID)",
+              "predicate": "{GET [/preference/peopleguid/{peopleGuid}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.PeoplePreferenceController",
+                  "name": "getPeoplePreferenceWrapper",
+                  "descriptor": "(Ljava/util/UUID;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/preference/peopleguid/{peopleGuid}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.PayrollTimeEntryController#calculateTimeEntriesFromTOR(String, String, UUID)",
+              "predicate": "{GET [/payrolls/{payrollNumber}/timeoff/{timeOffRequestGUID}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.PayrollTimeEntryController",
+                  "name": "calculateTimeEntriesFromTOR",
+                  "descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/util/UUID;)Ljava/util/List;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/payrolls/{payrollNumber}/timeoff/{timeOffRequestGUID}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyHolidayController#searchCompanyHolidays(Long, String, String, String)",
+              "predicate": "{GET [/companyholidays/search]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyHolidayController",
+                  "name": "searchCompanyHolidays",
+                  "descriptor": "(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companyholidays/search"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#getCurrentBalanceHistoryForCompany(Long, HttpServletRequest)",
+              "predicate": "{GET [/companytimeoffrequest/currentbalancehistories/{companyId}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "getCurrentBalanceHistoryForCompany",
+                  "descriptor": "(Ljava/lang/Long;Ljavax/servlet/http/HttpServletRequest;)Ljava/util/List;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/currentbalancehistories/{companyId}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.AbsenceReasonController#getAbsenceReasons(UUID, HttpServletRequest, String)",
+              "predicate": "{GET [/absencereasons/{peopleGuid}/{language}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.AbsenceReasonController",
+                  "name": "getAbsenceReasons",
+                  "descriptor": "(Ljava/util/UUID;Ljavax/servlet/http/HttpServletRequest;Ljava/lang/String;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/absencereasons/{peopleGuid}/{language}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController#getManagerTimeOffRequestActionStatus(UUID, long, Integer, Integer, HttpServletRequest)",
+              "predicate": "{GET [/timeoffrequests/employees/{reporttoguid}], params [companyId], produces [application/json]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController",
+                  "name": "getManagerTimeOffRequestActionStatus",
+                  "descriptor": "(Ljava/util/UUID;JLjava/lang/Integer;Ljava/lang/Integer;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [
+                    {
+                      "name": "companyId",
+                      "value": null,
+                      "negated": false
+                    }
+                  ],
+                  "patterns": [
+                    "/timeoffrequests/employees/{reporttoguid}"
+                  ],
+                  "produces": [
+                    {
+                      "mediaType": "application/json",
+                      "negated": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "handler": "org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)",
+              "predicate": "{ [/error], produces [text/html]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController",
+                  "name": "errorHtml",
+                  "descriptor": "(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lorg/springframework/web/servlet/ModelAndView;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [],
+                  "params": [],
+                  "patterns": [
+                    "/error"
+                  ],
+                  "produces": [
+                    {
+                      "mediaType": "text/html",
+                      "negated": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#updateCustomEntitlements(UUID, CustomEntitlementWizardModel, HttpServletRequest)",
+              "predicate": "{PUT [/companytimeoffrequest/editcustomentitlement/{customEntitlementGuid}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "updateCustomEntitlements",
+                  "descriptor": "(Ljava/util/UUID;Lcom/ceridian/powerpay/common/model/CustomEntitlementWizardModel;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "PUT"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/editcustomentitlement/{customEntitlementGuid}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#getBalanceHistoryForEmployee(UUID, String, HttpServletRequest)",
+              "predicate": "{GET [/companytimeoffrequest/balancehistories]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "getBalanceHistoryForEmployee",
+                  "descriptor": "(Ljava/util/UUID;Ljava/lang/String;Ljavax/servlet/http/HttpServletRequest;)Ljava/util/List;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/balancehistories"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyHolidayController#findCompanyHolidayByMonthAndYear(long, String, String)",
+              "predicate": "{GET [/companyholidays/holidays], params [companyId && year], produces [application/json]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyHolidayController",
+                  "name": "findCompanyHolidayByMonthAndYear",
+                  "descriptor": "(JLjava/lang/String;Ljava/lang/String;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [
+                    {
+                      "name": "companyId",
+                      "value": null,
+                      "negated": false
+                    },
+                    {
+                      "name": "year",
+                      "value": null,
+                      "negated": false
+                    }
+                  ],
+                  "patterns": [
+                    "/companyholidays/holidays"
+                  ],
+                  "produces": [
+                    {
+                      "mediaType": "application/json",
+                      "negated": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyHolidayController#findCompanyHolidayById(long)",
+              "predicate": "{GET [/companyholidays/{holidayId}], produces [application/json]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyHolidayController",
+                  "name": "findCompanyHolidayById",
+                  "descriptor": "(J)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companyholidays/{holidayId}"
+                  ],
+                  "produces": [
+                    {
+                      "mediaType": "application/json",
+                      "negated": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "handler": "org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)",
+              "predicate": "{ [/error]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController",
+                  "name": "error",
+                  "descriptor": "(Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [],
+                  "params": [],
+                  "patterns": [
+                    "/error"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController#findTimeOffRequestByCompanyId(long, HttpServletRequest)",
+              "predicate": "{GET [/timeoffrequests/companytimeoffs/{companyId}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController",
+                  "name": "findTimeOffRequestByCompanyId",
+                  "descriptor": "(JLjavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/timeoffrequests/companytimeoffs/{companyId}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.PeoplePreferenceController#createPeoplePreferenceWrapper(UUID, PeopleTimeOffPreferenceWrapper, HttpServletRequest)",
+              "predicate": "{PUT [/preference/peopleguid/{peopleGuid}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.PeoplePreferenceController",
+                  "name": "createPeoplePreferenceWrapper",
+                  "descriptor": "(Ljava/util/UUID;Lcom/ceridian/powerpay/common/model/PeopleTimeOffPreferenceWrapper;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "PUT"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/preference/peopleguid/{peopleGuid}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController#findTimeOffRequestByPeopleGuid(UUID, HttpServletRequest)",
+              "predicate": "{GET [/timeoffrequests/peopletimeoffs/{peopleGuid}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController",
+                  "name": "findTimeOffRequestByPeopleGuid",
+                  "descriptor": "(Ljava/util/UUID;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/timeoffrequests/peopletimeoffs/{peopleGuid}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.PeoplePreferenceController#updatePeoplePreference(UUID, PeoplePreferenceModel, HttpServletRequest)",
+              "predicate": "{PUT [/preference/{peoplePreferenceGuid}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.PeoplePreferenceController",
+                  "name": "updatePeoplePreference",
+                  "descriptor": "(Ljava/util/UUID;Lcom/ceridian/powerpay/common/model/PeoplePreferenceModel;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "PUT"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/preference/{peoplePreferenceGuid}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#removeCustomEntitlementForPeopleGuid(UUID, HttpServletRequest)",
+              "predicate": "{DELETE [/companytimeoffrequest/removecustomentitlementforpeople]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "removeCustomEntitlementForPeopleGuid",
+                  "descriptor": "(Ljava/util/UUID;Ljavax/servlet/http/HttpServletRequest;)Ljava/lang/Boolean;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "DELETE"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/removecustomentitlementforpeople"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#getCustomEntitlementsListForCompany(UUID, String, boolean)",
+              "predicate": "{GET [/companytimeoffrequest/{companyGuid}/{language}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "getCustomEntitlementsListForCompany",
+                  "descriptor": "(Ljava/util/UUID;Ljava/lang/String;Z)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/{companyGuid}/{language}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController#getStandardEntitlement(UUID, HttpServletRequest)",
+              "predicate": "{GET [/companytimeoffrequest/standardentitlements/{companyGuid}]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.CompanyTimeOffRequestController",
+                  "name": "getStandardEntitlement",
+                  "descriptor": "(Ljava/util/UUID;Ljavax/servlet/http/HttpServletRequest;)Ljava/util/List;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/companytimeoffrequest/standardentitlements/{companyGuid}"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "springfox.documentation.swagger.web.ApiResourceController#swaggerResources()",
+              "predicate": "{GET [/swagger-resources], produces [application/json]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "springfox.documentation.swagger.web.ApiResourceController",
+                  "name": "swaggerResources",
+                  "descriptor": "()Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "GET"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/swagger-resources"
+                  ],
+                  "produces": [
+                    {
+                      "mediaType": "application/json",
+                      "negated": false
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "handler": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController#calculateTimeOffRequestHours(TimeOffRequestModel, HttpServletRequest)",
+              "predicate": "{POST [/timeoffrequests/timerequesthours]}",
+              "details": {
+                "handlerMethod": {
+                  "className": "ca.ceridian.powerpayhr.timeoff.controller.TimeOffRequestController",
+                  "name": "calculateTimeOffRequestHours",
+                  "descriptor": "(Lcom/ceridian/powerpay/common/model/TimeOffRequestModel;Ljavax/servlet/http/HttpServletRequest;)Lorg/springframework/http/ResponseEntity;"
+                },
+                "requestMappingConditions": {
+                  "consumes": [],
+                  "headers": [],
+                  "methods": [
+                    "POST"
+                  ],
+                  "params": [],
+                  "patterns": [
+                    "/timeoffrequests/timerequesthours"
+                  ],
+                  "produces": []
+                }
+              }
+            },
+            {
+              "handler": "ResourceHttpRequestHandler [classpath [META-INF/resources/]]",
+              "predicate": "/../../swagger-ui.html",
+              "details": null
+            },
+            {
+              "handler": "ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]",
+              "predicate": "/webjars/**",
+              "details": null
+            }
+          ]
+        },
+        "servletFilters": [
+          {
+            "servletNameMappings": [],
+            "urlPatternMappings": [
+              "/*"
+            ],
+            "name": "webMvcMetricsFilter",
+            "className": "org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter"
+          },
+          {
+            "servletNameMappings": [],
+            "urlPatternMappings": [
+              "/*"
+            ],
+            "name": "errorPageSecurityFilter",
+            "className": "org.springframework.boot.web.servlet.filter.ErrorPageSecurityFilter"
+          },
+          {
+            "servletNameMappings": [],
+            "urlPatternMappings": [
+              "/*"
+            ],
+            "name": "Tomcat WebSocket (JSR356) Filter",
+            "className": "org.apache.tomcat.websocket.server.WsFilter"
+          },
+          {
+            "servletNameMappings": [],
+            "urlPatternMappings": [
+              "/*"
+            ],
+            "name": "lazyTracingFilter",
+            "className": "org.springframework.cloud.sleuth.autoconfig.instrument.web.TraceWebServletConfiguration$LazyTracingFilter"
+          },
+          {
+            "servletNameMappings": [],
+            "urlPatternMappings": [
+              "/*"
+            ],
+            "name": "characterEncodingFilter",
+            "className": "org.springframework.boot.web.servlet.filter.OrderedCharacterEncodingFilter"
+          },
+          {
+            "servletNameMappings": [],
+            "urlPatternMappings": [
+              "/*"
+            ],
+            "name": "springSecurityFilterChain",
+            "className": "org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean$1"
+          }
+        ],
+        "servlets": [
+          {
+            "mappings": [
+              "/"
+            ],
+            "name": "dispatcherServlet",
+            "className": "org.springframework.web.servlet.DispatcherServlet"
+          }
+        ]
+      },
+      "parentId": null
+    }
+  }
+}
