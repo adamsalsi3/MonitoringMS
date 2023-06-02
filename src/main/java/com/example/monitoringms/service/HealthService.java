@@ -1,11 +1,13 @@
 package com.example.monitoringms.service;
 
 import com.example.monitoringms.Data.HealthResponse;
+import com.example.monitoringms.Data.Microservice;
 import io.reactivex.rxjava3.core.Flowable;
 import io.reactivex.rxjava3.core.Maybe;
 import io.reactivex.rxjava3.schedulers.Schedulers;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -16,7 +18,7 @@ import java.util.concurrent.TimeUnit;
 public class HealthService {
 
     //@Value("microservice.actuator.service.baseurl")
-    private String healthUrl = "http://che4ppayapi01.cheadds.ca:8708/timeoff/pphr-monitor/health";
+    private final String healthUrl = "http://che4ppayapi01.cheadds.ca:8708/timeoff/pphr-monitor/health";
 
     private final RestTemplate restTemplate = new RestTemplate();
 
@@ -39,5 +41,20 @@ public class HealthService {
                 return Maybe.empty();
             }
         });
+    }
+
+    @Scheduled(fixedDelay = 5000) // Run every 5 seconds
+    public void reportHealth() {
+        Microservice microservice = new Microservice();
+        microservice.setName("Microservice A");
+        microservice.setStatus("UP");
+        // Set other relevant metrics or information
+
+        restTemplate.postForObject(
+                "http://che4ppayapi01.cheadds.ca:8708/monitor/{microserviceName}",
+                microservice,
+                Void.class,
+                microservice.getName()
+        );
     }
 }
